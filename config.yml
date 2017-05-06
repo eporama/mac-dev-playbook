@@ -1,0 +1,74 @@
+---
+configure_sudoers: no
+configure_terminal: no
+configure_osx: no
+
+dotfiles_repo: https://github.com/eporama/dotfiles.git
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/src/dotfiles
+dotfiles_files:
+  - .config
+  - .bash_profile
+  - .gitconfig
+  - .gitignore_global
+  - .my.cnf
+  - .mylogin.cnf
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - autoconf
+  - bash
+  - bash-completion
+  - chromedriver
+  - coreutils
+  - doxygen
+  - gettext
+  - git
+  - gpg
+  - handbrake
+  - httpie
+  - hub
+  - iperf
+  - libevent
+  - mcrypt
+  - ncdu
+  - openssl
+  - pv
+  - readline
+  - ripgrep
+  - s3cmd
+  - sqlite
+  - ssh-copy-id
+  - tree
+  - watch
+  - wget
+  - wrk
+
+homebrew_taps:
+  - homebrew/core
+  - caskroom/cask
+  - homebrew/binary
+  - homebrew/dupes
+  - homebrew/php
+  - homebrew/versions
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - 1password
+  - alfred
+  - atom
+  - dropbox
+  - firefox
+  - gitkraken
+  - google-chrome
+  - iterm
+  - licecap
+  - macvim
+  - nvalt
+  - phpstorm
+  - sequel-pro
+  - skitch
+  - telegram
+  - textmate
+  - vagrant
+  - virtualbox
